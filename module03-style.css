@@ -1,0 +1,171 @@
+p {
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font: 1em;
+  font-weight: bolder;
+  font-style: bold;
+  letter-spacing: .0;
+  word-spacing: 0;
+  line-height: 1em;
+  text-align: justify;
+  text-indent: 1em;
+  margin: 1em 4em 1em 2em;
+  margin-right: 6em;
+  border: 3px solid grey;
+  padding: 0.4em;
+
+}
+
+h1 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 2em;
+}
+
+.changecolor {
+  color: purple;
+  font-weight: bold;
+}
+
+.big {
+  font-size: 5em;
+}
+
+.blockquote {
+  font-size: 2em;
+}
+
+body {
+  color: black;
+  font-size: 1.2em;
+}
+#second-paragraph {
+  margin-left: 6em;
+}
+
+div#header { font-size: 2em;
+  margin: .1em .2em .2em .2em;
+}
+div#navBar { font-size: 1.1em;
+  margin: .1em .2em .2em .2em;
+}
+
+div#body { font-size: 1.1em;
+  margin: .1em .2em .2em .2em;
+}
+
+div#intro { font-size: 1.1em;
+  margin: .1em .2em .2em .2em;
+}
+
+div#info { font-size: 1.1em;
+  margin: .1em .2em .2em .2em;
+}
+
+div#courses { font-size: 1em;
+  margin: 1em 2em 2em 2em;
+}
+
+div#interest { font-size: 1em;
+  margin: 1em .2em .2em 2em;
+}
+
+div#contact { font-size: 1.1em;
+  margin: 1em 2em 2em 2em;
+}
+div#pic {
+  float: right;
+  margin: 1em 2em 2em 2em;
+}
+
+div#fullpage {
+  font-size: 1em;
+  margin: 0em 1em 1em 1em;
+}
+
+
+th, td {
+  border: 2px solid black;
+  font-size: 1em;
+  border-spacing: 1em;
+  padding: 1em;
+  border-collapse: collapse;
+}
+img{
+  display: inline;
+  float: left;
+
+}
+
+html, body, div { margin: 0; padding: 0; border: 0 none; }
+#intro { width: 960px; margin: 0 auto; }
+#courses { width: 200px; float: left; }
+#interest { width: 200px; float: left; }
+#contact { width: 200px; float: left; }
+
+
+
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+ul.topnav li a:hover {background-color: #555;}
+ul.topnav li.icon {display: none;}
+
+
+
+
+
+
+
+/*
+<li class="icon">
+<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+</li>
+------
+div#1 { font-size: 1.1em;
+  margin: .1em .2em .2em .2em;
+}
+
+div#2 { font-size: 1.1em;
+  margin: .1em .2em .2em .2em;
+}
+
+div#3 { font-size: 1.1em;
+  margin: .1em .2em .2em .2em;
+}
+
+div#4 { font-size: 1.1em;
+  margin: .1em .2em .2em .2em;
+}
+
+div#5 { font-size: 1.1em;
+  margin: .1em .2em .2em .2em;
+}
+
+div#6 { font-size: 1.1em;
+  margin: .1em .2em .2em .2em;
+}
+
+div#7 { font-size: 1.1em;
+  margin: .1em .2em .2em .2em;
+}
+
+div#8 { font-size: 1.1em;
+  margin: .1em .2em .2em .2em;
+}
+*/
