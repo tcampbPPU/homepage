@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <title>Tanner Campbell's homepage!</title>
+    <style>
+    body {
+      background-color: grey;
+    }
+    </style>
+
+  <link rel="stylesheet" type="text/css" href="module03-style.css">
+  <script src="jquery-3.1.1.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    console.log("jQuery was loaded");
+
+    $("#button").mouseover(function() {
+      $(this).css("color", "yellow");
+    });
+    $("#button").on("mouseout", function() {
+      $(this).css("color", "black");
+    });
+    $("#addRecord").click(function() {
+      console.log("add record");
+      $("#header").parent().append("<tr><td>" + $("#email").val() + "</td></tr>");
+      $("#email").val("");
+    });
+    $("#bigger").click( function() { zoom( 1.2 ); } );
+    $("#smaller").click( function() { zoom( 0.8 ); } );
+    function zoom( factor ) {
+      var div = $("#textpage");
+      var size = div.css( "font-size" );
+      size = parseFloat( size );
+      console.log([ "size", size ]);
+      size *= factor;
+      div.css( "font-size", size + "px" )
+    }
+    $("#button").click(function() {
+      //$("div").fadeIn(2000);
+      $("#pic").fadeOut(5000);
+    });
+
+  });
+
+    function showpage(page) {
+      $("#page1").css("display", "none");
+      $("#page2").css("display", "none");
+      $("#page3").css("display", "none");
+      $("#page4").css("display", "none");
+      if (page === 1) {
+        $("#page1").css("display", "block");
+      }
+      else if (page === 2) {
+        $("#page2").css("display", "block");
+      }
+      else if (page === 3) {
+        $("#page3").css("display", "block");
+      }
+      else if (page === 4) {
+        $("#page4").css("display", "block");
+      }
+    }
+
+
+
+
+</script>
+</head>
+
+<body>
+  <div id="textpage">
+  <div id="pic">
+  <img src="https://lh3.googleusercontent.com/-ltGjSzaj1Fc/AAAAAAAAAAI/AAAAAAAAAD8/1bQHpUSpiHU/s360-c-k-no/photo.jpg" alt="Tanner Campbell" height="300" width="300">
+  <button id="button">Click Me</button>
+</div>
+<div id="fullpage">
+  <div id="header"><span class="changecolor">Hello World!</span></div>
+  <a href="javascript:void(0)" onclick="showpage(1)">Home</a> |
+  <a href="javascript:void(0)" onclick="showpage(2)">Courses</a> |
+  <a href="javascript:void(0)" onclick="showpage(3)">Interest</a> |
+  <a href="javascript:void(0)" onclick="showpage(4)">Contact</a>
+
+  <div id="page1">
+    <p>My Name is Tanner Campbell, Thank you for visting my Homepage.</p>
+    <p>I am a Sophomore here at Point Park and I also play baseball.</p>
+    <p>I'm Majoring in Information Technology since I have always been interested in how computers work and learning code.</p>
+  </div>
+
+  <div id="page2" style="display:none;">
+    <table>
+      <tr><td>Databases</tr></td> <tr><td>Networking and Security</tr></td>
+        <tr><td>Intro to Programming</tr></td> <tr><td>Business Analytics</tr></td>
+        <tr><td>Data Structures</tr></td>
+    </table>
+  </div>
+
+  <div id="page3" style="display:none;">
+    <table>
+      <tr><td>Web development</tr></td> <tr><td>Cyber Security</tr></td>
+        <tr><td>Operating Systems</tr></td> <tr><td>Mobile App Development</tr></td>
+    </table>
+  </div>
+
+  <div id="page4" style="display:none;">
+    <ul>
+      <li> tcampb@pointpark.edu </li>
+      <li> tcamp022@gmail.com</li>
+     </ul>
+
+  </div>
+  </div>
+
+
+    <br>
+  <button id="bigger">Zoom In</button><button id="smaller">Zoom Out</button>
+  <br>
+  <br>
+  <table>
+    <tr id="header"><td><b>Leave Email</b></td></tr>
+  </table>
+  </div>
+  <input id="email"><button id="addRecord">Add Record</button>
+</body>
+</html>
